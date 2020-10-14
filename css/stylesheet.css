@@ -147,10 +147,9 @@ h2.title{text-align: center;}
   }.gallery{
     flex: 100%;
     padding: 40px;
-    filter: grayscale(80%);
+    filter: grayscale(0%);
     transition: 0.5s;
   }
-  .gallery{filter: grayscale(0%);}
   .main-pc{display: none;}
   .main-mobile{display: block;}
   .text-block{padding: 40% 0;}
