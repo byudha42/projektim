@@ -1,0 +1,156 @@
+*{box-sizing: border-box;}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1b262c;
+  scroll-behavior: smooth;
+}
+.navbar{
+  position: fixed;
+  z-index: 2;
+  padding: 20px 15px;
+}
+.menu-bar{
+  font-size:30px;
+  cursor:pointer;
+  padding: 12px 20px 12px 20px;
+  background-color: #1b262c;
+  color:#bbe1fa;
+}
+.sidenav {
+  z-index: 3;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+/* Main-Header */
+.container {
+  position: relative;
+  z-index: 1;
+}
+.main-pc{display: block;}
+.main-mobile{display: none;}
+/* Bottom right text */
+.text-block, .text-block-1 {
+  position: absolute;
+  cursor: pointer;
+  width: 50%;
+  height: 99.3%;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color:rgba(0, 0, 0,0.5);
+  -webkit-transition; 1s;
+  transition: 1s;
+}
+.text-block{ 
+  top: 0px;
+  right: 0px;
+  padding: 17% 0;
+}
+.text-block:hover, .text-block-1:hover{
+  background-color: inherit;
+}
+.text-block h1{
+  font-family: 'Julius Sans One', sans-serif;
+  letter-spacing: 5px;
+  text-align: center;
+}
+.text-block p{
+  font-size: 20px;
+  text-align: center;
+}
+.text-block-1{
+  top: 0px;
+  left: 0px;
+}
+.text-block-1 img{
+  display: block;
+  margin:30% auto;
+  width: 40%;
+}
+
+
+/* main */
+.container-body{
+  background-color: #1b262c;
+  color: #bbe1fa;
+  font-family: 'Julius Sans One', sans-serif;
+}
+h2.title{text-align: center;}
+.main-body{
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery{
+  flex: 32%;
+  padding: 40px;
+  filter: grayscale(80%);
+  transition: 0.5s;
+}
+.gallery div{
+  background-color: #0f4c75;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.gallery:hover{
+  filter: grayscale(0%);
+  transition: 0.5s;
+}
+.gallery img{
+  width: 100%;
+  height: auto;
+  border-radius: 15px 15px 0 0;
+}
+.desc{
+  padding: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .text-block-1{display: none;}
+  .text-block{width: 100%;}
+  .sidenav a {
+    font-size: 18px;
+  }.gallery{
+    flex: 100%;
+    padding: 40px;
+    filter: grayscale(80%);
+    transition: 0.5s;
+  }
+  .main-pc{display: none;}
+  .main-mobile{display: block;}
+  .text-block{padding: 40% 0;}
+}
