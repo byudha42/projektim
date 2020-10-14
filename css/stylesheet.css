@@ -150,7 +150,7 @@ h2.title{text-align: center;}
     filter: grayscale(80%);
     transition: 0.5s;
   }
-  .text-block, .text-block-1{filter:none}
+  .gallery{filter: grayscale(0%);}
   .main-pc{display: none;}
   .main-mobile{display: block;}
   .text-block{padding: 40% 0;}
